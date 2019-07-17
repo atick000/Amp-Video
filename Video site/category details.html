@@ -1,0 +1,985 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+
+	<meta charset="UTF-8">
+	<title></title>
+  <link rel="canonical" href="./regular-html-version.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<link rel="stylesheet" href="bootstrap.css" />
+	
+<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+	
+	<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+	
+	<script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+
+	<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+	
+
+
+
+
+
+
+
+
+
+	
+<style amp-custom="">
+
+body{
+	background:#fafafa;
+}
+
+.wrap{
+margin: 40px auto 0;
+overflow:auto;
+}
+.video-slider{
+
+}
+
+.sidebar-header {
+    background-size: 270px 112px;
+    width: 270px;
+    height: 52px;
+    background-color: #066ac1;
+}
+
+
+.sidebar-logo {
+    background-image: url(http://www.wikibangla.info/images/logo-footer.png);
+	background-size: 168px 27px;
+    background-repeat: no-repeat;
+    height: 39px;
+    width: 270px;
+    background-position: center;
+    position: fixed;
+}
+
+#sidebar1{
+width:230px;
+background:#fff;
+transition: transform 233ms cubic-bezier(0, 0, 0.21, 1); transition: transform 233ms cubic-bezier(0, 0, 0.21, 1), -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1)
+}
+
+.sidebar li{
+list-style:none;
+height: 55px;
+    line-height: 57px;
+    padding-left: 10px;
+    transition: all 250ms ease
+}
+
+.sidebar li a {
+color: #2e2e2e;
+    font-size: 14px;
+    font-weight: 500;
+ 
+}
+
+
+.navbar {
+  overflow: ;
+ background:linear-gradient(36deg, #1573ca, #0389ff);
+  position: fixed;
+  width: 100%;
+  z-index:111
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+    padding: 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+.hamburger{
+    position: fixed;
+    z-index: 9999;
+    right: 10px;
+    /* width: 30px; */
+    /* height: 2px; */
+    color: #0;
+    font-size: 27px;
+    /* border-right: 5px; */
+}
+
+
+.background-ct{
+	 background-image: url(http://www.theivanhoepub.com/wp-content/uploads/2010/09/colddish.jpg);
+
+    background-repeat: no-repeat;
+    height: 100px;
+	width:100%;
+    background-position: center;
+
+}
+
+.category-name{
+	padding:40px 0;
+
+}
+
+.recommended-grid-info p {
+    padding:0px 10px 0px 10px;}
+	
+.resent-grid {
+    padding-left: 0.1em;
+	    box-shadow: 0px 0 2px #C1C1C1;
+}
+.resent-grid-img {
+    position: relative;
+}
+.recommended-grid-info h5 {
+    margin: 0;
+    overflow: hidden;
+    padding: 10px 5px;
+    font-size: 13px;
+	padding: 23px 0px 67px 10px;
+	}
+	
+.category{
+box-shadow: 0 1px 5px 0 rgba(0,0,0,.16), 0 1px 2px 0 rgba(0,0,0,.26);
+}	
+	
+.resent-grid-info ul {
+    padding: 0;
+    margin: 0;}
+
+.recommended-grid-info ul li {
+    display: inline-block;
+    width: 49%;	}
+	
+.ct-list ul{
+	margin:0;
+	padding:17px;
+}	
+.ct-list ul li{
+	display:inline-block;
+	list-style:none;
+	margin:0;
+	padding:0;
+}	
+	
+.ct-list ul li a{
+	font-size:19px;
+	color: #ff4343;
+}	
+	
+.recommended-grid-info ul li.right-list {
+    text-align: right;}
+	
+.category-post{
+	padding:10px 0;
+}
+	
+
+
+
+.amp-carousel .card-container {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.card-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.dochome .getting-started .card-video .centered {
+    align-items: center;
+    text-align: center;
+}
+
+.card-video {
+    background: #fff;
+    box-shadow: 0px 3px 20px 0 rgba(0,0,0,0.075);
+    box-sizing: border-box;
+    display: inline-block;
+    flex: 0 0 31%;
+    flex: 0 0 calc(50% - 30px);
+    flex-basis: calc(53% - 54px);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+
+.dochome .getting-started .card-video.centered{
+	align-items: center;
+    text-align: center;
+}
+
+.dochome .getting-started .card-inner {
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 990px) {
+.card-video{
+
+}
+.card-inner{
+
+}
+.card-video{
+flex-basis: calc(100% - 30px);
+}
+}
+
+
+
+
+
+
+
+
+
+.card-inner {
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+	padding:16px;
+    justify-content: space-between;
+    width: 100%;}
+
+.card-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+    /* Wrapper that hosts the video and the overlay */
+    .video-player {
+      position: relative;
+      overflow: hidden;
+    }
+    /* Overlay fills the parent and sits on top of the video */
+    .click-to-play-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .poster-image {
+      position: absolute;
+      z-index: 1;
+    }
+    .poster-image img {
+      object-fit: cover;
+    }
+
+    .play-icon {
+      position: absolute;
+      z-index: 2;
+      width: 100px;
+      height: 100px;
+      background-image: url(https://newimages.bwwstatic.com/2018/video-play-icon.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      /* Align to the middle */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+      opacity: 0.9;
+    }
+    .play-icon:hover, .play-icon:focus {
+      opacity: 1;
+    }
+	
+	
+	
+     .bg-grey {
+        background: #292929;
+     }
+     .logo-footer {
+        margin-bottom: 40px;
+     }
+     footer {
+            color: grey;
+     }
+
+footer h6 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+    position: relative;
+}
+footer h6:after {
+    position: absolute;
+    content: "";
+    background: grey;
+    width: 12%;
+    height: 1px;
+    left: 0;
+    bottom: -20px;
+}
+     .btn-footer {
+                 color: grey;
+              
+                text-decoration: none;
+                border: 1px solid;
+                border-radius: 43px;
+                font-size: 13px;
+                padding: 7px 30px;
+                line-height: 47px;
+     }
+     .btn-footer:hover {
+                
+                text-decoration: none;
+               
+     }
+    .form-footer input[type="text"] {
+        border: none;
+    border-radius: 16px 0 0 16px;
+    outline: none;
+    padding-left: 10px;
+    
+}
+::placeholder {
+    font-size: 10px;
+    padding-left: 10px;
+    font-style: italic;
+}
+ .form-footer input[type="button"] {
+    border: none;
+    background:#232323;
+        margin-left: -5px;
+    color: #fff;
+    outline: none;
+    border-radius: 0 16px 16px 0;
+    padding: 2px 12px;
+}
+     .social .fa {
+    color: grey;
+    font-size: 22px;
+    padding: 10px 15px;
+    background: #3c3c3c;
+}
+     footer ul li {
+    list-style: none;
+    display: block;
+}
+  footer ul  {
+   padding-left: 0;
+}
+footer ul  li a{
+  text-decoration: none;
+  color: grey;
+  text-decoration:none;
+}
+.logo-part {
+    border-right: 1px solid grey;
+    height: 100%;
+    }
+</style>
+	
+	
+	
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Article headline",
+      "image": [
+        "thumbnail1.jpg"
+      ],
+      "datePublished": "2015-02-05T08:00:00+08:00"
+    }
+    </script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+	
+</head>
+<body>
+
+
+
+
+
+<header class="headerbar">
+  <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
+  
+  <nav class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">Archive</a>
+  <a href="#contact">Contact</a>
+</nav>
+  
+  <amp-sidebar id="sidebar1" layout="nodisplay" side="right">
+  <!--
+  <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕</div>
+  -->
+  <div class="sidebar-header"><a class="sidebar-logo" href="#"></a></div>
+  
+  <ul class="sidebar">
+    <li><a href="#">video category </a></li>
+    <li><a href="#">video category 2</a></li>
+    <li><a href="#">video category 3</a></li>
+  </ul>
+</amp-sidebar>
+  
+</header>
+
+
+		
+
+
+<section class="container-fluid " >
+	<div class="row">
+	<div class="background-ct">
+		<h1 class="text-center category-name">
+		Category-Name
+		</h1>
+	</div>
+	</div>
+</section>
+
+		
+		
+
+	<section class="container-fluid">
+			<div class="container" >
+		<div class="video-wrap">
+ <amp-carousel class="tablet-up"
+                  loop controls
+                  height="300"
+                  layout="flex-item"
+                  type="slides">
+                <div class="card-container">
+                <a class="card-video centered" href="https://www.youtube.com/watch?v=XDvbJ2apaiA">
+                  <div class="card-inner">
+                    <div class="card-content">
+                      <amp-youtube
+                          data-videoid="XDvbJ2apaiA"
+                          layout="responsive"
+                          width="480" height="270"></amp-youtube>
+                    </div>
+                  </div>
+                </a>   
+
+
+                <a class="card-video centered" href="https://www.youtube.com/watch?v=OO9oKhs80aI">
+                  <div class="card-inner card-inner ">
+                    <div class="card-content">
+                      <amp-youtube
+                          data-videoid="OO9oKhs80aI"
+                          layout="responsive"
+                          width="480" height="270"></amp-youtube>
+                    </div>
+                  </div>
+                </a>   
+
+
+              </div>
+              <div class="card-container">
+                <a class="card-video centered" href="https://www.youtube.com/watch?v=q-JO22O1DQ0">
+                  <div class="card-inner card-inner">
+                    <div class="card-content">
+                      <amp-youtube
+                          data-videoid="q-JO22O1DQ0"
+                          layout="responsive"
+                          width="480" height="270"></amp-youtube>
+                    </div>
+                  </div>
+                </a>   
+
+
+                <a class="card-video centered" href="https://www.youtube.com/watch?v=xF6mjl-wOqU">
+                  <div class="card-inner">
+                    <div class="card-content">
+                      <amp-youtube
+                          data-videoid="xF6mjl-wOqU"
+                          layout="responsive"
+                          width="480" height="270"></amp-youtube>
+                    </div>
+                  </div>
+                </a>   
+
+
+              </div>
+              <div class="card-container">
+                <a class="card-video centered" href="https://www.youtube.com/watch?v=y6kA3u3GIwswOqU">
+                  <div class="card-inner">
+                    <div class="card-content">
+                      <amp-youtube
+                          data-videoid="y6kA3u3GIws"
+                          layout="responsive"
+                          width="480" height="270"></amp-youtube>
+                    </div>
+                  </div>
+                </a>   
+
+
+                <a class="card-video centered" href="https://www.youtube.com/watch?v=K6zKOtS_2FU">
+                  <div class="card-inner">
+                    <div class="card-content">
+                      <amp-youtube
+                          data-videoid="K6zKOtS_2FU"
+                          layout="responsive"
+                          width="480" height="270"></amp-youtube>
+                    </div>
+                  </div>
+                </a>   
+
+
+              </div>
+              <div class="card-container">
+                <a class="card-video centered" href="https://www.youtube.com/channel/UCXPBsjgKKG2HqsKBhWA4uQw">
+                  <div class="card-inner">
+                    <div class="card-content">
+                      <h3>AMP Channel</h3>
+                      <p>Visit the AMP Channel on YouTube for more videos.</p>
+                    </div>
+                  </div>
+                </a>   
+
+                    <div class="card card--spacer"></div>
+
+              </div>
+            </amp-carousel>
+		</div>
+	
+			
+			</div>
+	</section>	
+		
+		
+		
+		
+		
+		
+		
+<section class="container-fluid">
+	<div class="row"> 
+		<div class="wrap">
+		<div class="container"> 
+		<div class="ct-list"> 
+			<ul>
+				<li><a href="">Category Name</a></li>
+				<li class="pull-right"><a href="">All Post</a></li>
+			</ul>
+		</div>
+
+
+			  
+			  <div class="col-md-12">
+				<div class="category-post">
+					<div class="resent-grid recommended-grid">
+							<div class="resent-grid-img recommended-grid-img">
+								<a href="http://www.wikibangla.info/video/single/16">
+								<amp-img src="https://optimizedude.com/wp-content/uploads/2015/02/Cool-Twitter-Header-ideas.jpg" alt="Welcome" height="200" width="1000" layout="responsive"></amp-img>
+								
+								
+								</a>
+							</div>
+							<div class="resent-grid-info recommended-grid-info video-info-grid">
+								<h2 class="card-headline"><a href="http://www.wikibangla.info/video/single/16" class="title">এশিয়া _মহাদেশের_ ৫_ টি_ আতঙ্কজনক _ধর্মীয় _স্থান</a></h2>
+								
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.	</p>
+								
+								<ul>
+									<li><p class="author author-info"><a href="#" class="author">Admin 2</a></p></li>
+									<li class="right-list"><a href="" class="views views-info">Share</a></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			  </div>
+
+		
+		
+		
+		
+			
+			<div class="col-md-4 col-sm-6 col-xs-12"> 
+				<div class="category">
+					<div class="resent-grid recommended-grid">
+						<div class="resent-grid-img recommended-grid-img">		
+						<div class="video-player">
+						  <amp-video id="myVideo" controls
+							 width="1280" height="720" layout="responsive"
+							 src="https://www.videvo.net/videvo_files/converted/2018_01/preview/171124_H1_006.mp491073.webm">
+						  </amp-video>
+					  <div id="myOverlay" class="click-to-play-overlay">
+						<div class="play-icon"
+							 role="button" tabindex="0"
+							 on="tap:myOverlay.hide, myVideo.play"></div>
+						<amp-img class="poster-image"
+							 layout="fill"
+							 src="https://addpipe.com/sample_vid/poster.png">
+						</amp-img>
+					  </div>
+					</div>	
+						
+				</div>
+							<div class="resent-grid-info recommended-grid-info video-info-grid">
+								<h5><a href="http://www.wikibangla.info/video/single/16" class="title">এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান</a></h5>
+								<ul>
+									<li><p class="author author-info"><a href="#" class="author">Admin 2</a></p></li>
+									<li class="right-list"><p class="views views-info">1দেখা হয়েছে</p></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4 col-sm-6 col-xs-12"> 
+				<div class="category">
+					<div class="resent-grid recommended-grid">
+							<div class="resent-grid-img recommended-grid-img">
+								<a href="" class="">
+										<amp-youtube
+											data-videoid="mGENRKrdoGY"
+											layout="responsive"
+											width="480" height="270">
+										</amp-youtube>
+								
+								</a>
+							</div>
+							<div class="resent-grid-info recommended-grid-info video-info-grid">
+								<h5><a href="http://www.wikibangla.info/video/single/16" class="title">এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান</a></h5>
+								<ul>
+									<li><p class="author author-info"><a href="#" class="author">Admin 2</a></p></li>
+									<li class="right-list"><p class="views views-info">636 দেখা হয়েছে</p></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+			
+			<div class="col-md-4 col-sm-6 col-xs-12"> 
+				<div class="category">
+					<div class="resent-grid recommended-grid">
+							<div class="resent-grid-img recommended-grid-img">
+								<a href="http://www.wikibangla.info/video/single/16">
+								<amp-img src="http://www.wikibangla.info/./uploads/video_img/305X225_এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান1.jpg" " alt="Welcome" height="300" width="500" layout="responsive"></amp-img>
+								
+								
+								</a>
+							</div>
+							<div class="resent-grid-info recommended-grid-info video-info-grid">
+								<h5><a href="http://www.wikibangla.info/video/single/16" class="title">এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান</a></h5>
+								<ul>
+									<li><p class="author author-info"><a href="#" class="author">Admin 2</a></p></li>
+									<li class="right-list"><p class="views views-info">636 দেখা হয়েছে</p></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4 col-sm-6 col-xs-12"> 
+				<div class="category-post">
+					<div class="resent-grid recommended-grid">
+							<div class="resent-grid-img recommended-grid-img">
+								<a href="http://www.wikibangla.info/video/single/16">
+								<amp-img src="http://www.wikibangla.info/./uploads/video_img/305X225_এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান1.jpg" " alt="Welcome" height="300" width="500" layout="responsive"></amp-img>
+								
+								
+								</a>
+							</div>
+							<div class="resent-grid-info recommended-grid-info video-info-grid">
+								<h5><a href="http://www.wikibangla.info/video/single/16" class="title">এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান</a></h5>
+								<ul>
+									<li><p class="author author-info"><a href="#" class="author">Admin 2</a></p></li>
+									<li class="right-list"><p class="views views-info">636 দেখা হয়েছে</p></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+			
+		
+		</div>
+		
+		</div>
+	
+	</div>
+</section>
+	
+	
+
+
+	
+	
+
+
+
+
+	
+	
+<section class="container-fluid">
+	<div class="wrap"> 
+		<div class="container"> 
+			<h2>category 2</h2>
+			<div class="col-md-4 col-sm-6 col-xs-12"> 
+				<div class="category">
+					<div class="resent-grid recommended-grid">
+							<div class="resent-grid-img recommended-grid-img">
+								<a href="http://www.wikibangla.info/video/single/16">
+								<amp-img src="http://www.wikibangla.info/./uploads/video_img/305X225_এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান1.jpg" " alt="Welcome" height="300" width="500" layout="responsive"></amp-img>
+								
+								
+								</a>
+							</div>
+							<div class="resent-grid-info recommended-grid-info video-info-grid">
+								<h5><a href="http://www.wikibangla.info/video/single/16" class="title">এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান</a></h5>
+								<ul>
+									<li><p class="author author-info"><a href="#" class="author">Admin 2</a></p></li>
+									<li class="right-list"><p class="views views-info">636 দেখা হয়েছে</p></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4 col-sm-6 col-xs-12"> 
+				<div class="category">
+					<div class="resent-grid recommended-grid">
+							<div class="resent-grid-img recommended-grid-img">
+								<a href="http://www.wikibangla.info/video/single/16">
+								<amp-img src="http://www.wikibangla.info/./uploads/video_img/305X225_এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান1.jpg" " alt="Welcome" height="300" width="500" layout="responsive"></amp-img>
+								
+								
+								</a>
+							</div>
+							<div class="resent-grid-info recommended-grid-info video-info-grid">
+								<h5><a href="http://www.wikibangla.info/video/single/16" class="title">এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান</a></h5>
+								<ul>
+									<li><p class="author author-info"><a href="#" class="author">Admin 2</a></p></li>
+									<li class="right-list"><p class="views views-info">636 দেখা হয়েছে</p></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+			
+			<div class="col-md-4 col-sm-6 col-xs-12"> 
+				<div class="category">
+					<div class="resent-grid recommended-grid">
+							<div class="resent-grid-img recommended-grid-img">
+								<a href="http://www.wikibangla.info/video/single/16">
+								<amp-img src="http://www.wikibangla.info/./uploads/video_img/305X225_এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান1.jpg" " alt="Welcome" height="300" width="500" layout="responsive"></amp-img>
+								
+								
+								</a>
+							</div>
+							<div class="resent-grid-info recommended-grid-info video-info-grid">
+								<h5><a href="http://www.wikibangla.info/video/single/16" class="title">এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান</a></h5>
+								<ul>
+									<li><p class="author author-info"><a href="#" class="author">Admin 2</a></p></li>
+									<li class="right-list"><p class="views views-info">636 দেখা হয়েছে</p></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+						<div class="col-md-4 col-sm-6 col-xs-12"> 
+				<div class="category-post">
+					<div class="resent-grid recommended-grid">
+							<div class="resent-grid-img recommended-grid-img">
+								<a href="http://www.wikibangla.info/video/single/16">
+								<amp-img src="http://www.wikibangla.info/./uploads/video_img/305X225_এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান1.jpg" " alt="Welcome" height="300" width="500" layout="responsive"></amp-img>
+								
+								
+								</a>
+							</div>
+							<div class="resent-grid-info recommended-grid-info video-info-grid">
+								<h5><a href="http://www.wikibangla.info/video/single/16" class="title">এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান</a></h5>
+								<ul>
+									<li><p class="author author-info"><a href="#" class="author">Admin 2</a></p></li>
+									<li class="right-list"><p class="views views-info">636 দেখা হয়েছে</p></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+			
+		
+		</div>
+	
+	</div>
+</section>
+		
+	
+<section class="container-fluid">
+	<div class="wrap"> 
+		<div class="container"> 
+			<h2>category</h2>
+			<div class="col-md-4 col-sm-6 col-xs-12"> 
+				<div class="category">
+					<div class="resent-grid recommended-grid">
+							<div class="resent-grid-img recommended-grid-img">
+								<a href="http://www.wikibangla.info/video/single/16">
+								<amp-img src="http://www.wikibangla.info/./uploads/video_img/305X225_এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান1.jpg" " alt="Welcome" height="300" width="500" layout="responsive"></amp-img>
+								
+								
+								</a>
+							</div>
+							<div class="resent-grid-info recommended-grid-info video-info-grid">
+								<h5><a href="http://www.wikibangla.info/video/single/16" class="title">এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান</a></h5>
+								<ul>
+									<li><p class="author author-info"><a href="#" class="author">Admin 2</a></p></li>
+									<li class="right-list"><p class="views views-info">636 দেখা হয়েছে</p></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4 col-sm-6 col-xs-12"> 
+				<div class="category">
+					<div class="resent-grid recommended-grid">
+							<div class="resent-grid-img recommended-grid-img">
+								<a href="http://www.wikibangla.info/video/single/16">
+								<amp-img src="http://www.wikibangla.info/./uploads/video_img/305X225_এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান1.jpg" " alt="Welcome" height="300" width="500" layout="responsive"></amp-img>
+								
+								
+								</a>
+							</div>
+							<div class="resent-grid-info recommended-grid-info video-info-grid">
+								<h5><a href="http://www.wikibangla.info/video/single/16" class="title">এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান</a></h5>
+								<ul>
+									<li><p class="author author-info"><a href="#" class="author">Admin 2</a></p></li>
+									<li class="right-list"><p class="views views-info">636 দেখা হয়েছে</p></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+			
+			<div class="col-md-4 col-sm-6 col-xs-12"> 
+				<div class="category">
+					<div class="resent-grid recommended-grid">
+							<div class="resent-grid-img recommended-grid-img">
+								<a href="http://www.wikibangla.info/video/single/16">
+								<amp-img src="http://www.wikibangla.info/./uploads/video_img/305X225_এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান1.jpg" " alt="Welcome" height="300" width="500" layout="responsive"></amp-img>
+								
+								
+								</a>
+							</div>
+							<div class="resent-grid-info recommended-grid-info video-info-grid">
+								<h5><a href="http://www.wikibangla.info/video/single/16" class="title">এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান</a></h5>
+								<ul>
+									<li><p class="author author-info"><a href="#" class="author">Admin 2</a></p></li>
+									<li class="right-list"><p class="views views-info">636 দেখা হয়েছে</p></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+						<div class="col-md-4 col-sm-6 col-xs-12"> 
+				<div class="category-post">
+					<div class="resent-grid recommended-grid">
+							<div class="resent-grid-img recommended-grid-img">
+								<a href="http://www.wikibangla.info/video/single/16">
+								<amp-img src="http://www.wikibangla.info/./uploads/video_img/305X225_এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান1.jpg" " alt="Welcome" height="300" width="500" layout="responsive"></amp-img>
+								
+								
+								</a>
+							</div>
+							<div class="resent-grid-info recommended-grid-info video-info-grid">
+								<h5><a href="http://www.wikibangla.info/video/single/16" class="title">এশিয়া_মহাদেশের_৫_টি_আতঙ্কজনক_ধর্মীয়_স্থান</a></h5>
+								<ul>
+									<li><p class="author author-info"><a href="#" class="author">Admin 2</a></p></li>
+									<li class="right-list"><p class="views views-info">636 দেখা হয়েছে</p></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+			
+		
+		</div>
+	
+	</div>
+</section>
+		
+	
+	
+	
+	<footer class="container-fluid bg-grey py-5">
+	<div class="container">
+   <div class="row">
+      <div class="col-sm-8 col-xs-12">
+         <div class="row">
+            <div class="col-sm-6 col-xs-12">
+               <div class="logo-part">
+                  <amp-img height="45" width="300" layout="responsive" src="http://www.wikibangla.info/images/lo" </amp-img>
+                  <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
+                  <p>Use this tool as test data for an automated system or find your next pen</p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+               <h6> About Company</h6>
+               <p>But horizontal lines can only be a full pixel high.</p>
+               <a href="#" class="btn-footer"> More Info </a><br>
+               <a href="#" class="btn-footer"> Contact Us</a>
+            </div>
+         </div>
+      </div>
+      <div class=" col-sm-4 col-xs-12">
+         <div class="row">
+ 
+            <div class="col-xs-12">
+               <h6> Newsletter</h6>
+               <div class="social">
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+               </div>
+               <form class="form-footer my-3">
+                  <input type="text"  placeholder="search here...." name="search">
+                  <input type="button" value="Go" >
+               </form>
+               <p>That's technology limitation of LCD monitors</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+	</footer>
+	
+	
+</body>
+</html>
